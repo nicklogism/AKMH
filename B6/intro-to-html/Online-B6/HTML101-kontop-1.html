@@ -1,0 +1,156 @@
+<!--
+
+  H HTML είναι γλώσσα που περιγράφει πως θα εμφανίζονται "πράγματα" στην
+  ιστοσελίδα. Δεν περιγράφει την πληροφορία αλλά την εμφάνιση. Που θα
+  εμφανιστεί η πληροφορία. Στοίχιση, εμφάνιση, fonts κλπ.
+
+  Το XML format είναι αυτό που ασχολείται με τις πληροφορίες που περιέχονται
+  στη σελίδα. Όπως επίσης και το json.
+
+
+***************************** ΚΩΔΙΚΑΣ CSS ************************************
+Το CSS παίρνει ως παραμέτρους συνήθως tags που έχουμε στην HTML και αλλάζει τις
+ιδιότητες με κάποιες συγκεκριμένες τιμές. Styling.
+Τον κώδικα μπορούμε να τον τοποθετήσουμε κατευθείαν μέσα στην html, στο tag
+<style></style> (inline).
+Ο πιο συνηθισμένος τρόπος πάντως είναι σε ξεχωριστό αρχείο με κατάληξη .css
+
+ΣΥΝΤΑΞΗ
+
+h1 {
+  color:blue;
+  font-size:14px;
+}
+
+p {
+  color: blue;
+  text-align: center;
+}
+
+ή με ID
+
+#id
+{
+  color: Tomato;
+  text-align: center;
+}
+
+Άλλος τρόπος εκτός των IDs είναι τα classes.
+
+.h1class{
+  text-align:center;
+  color:chocolate;
+}
+
+**** Άλλες μέθοδοι για τα χρώματα *****
+
+p {
+  color: #ff00ff;
+}
+
+ή
+
+p {
+  color: rgb(191,32,13);
+}
+
+*** Με Alpha channel ***
+
+p {
+  color: rgba(191,32,13,0.4);
+}
+
+p {
+  color: hsl(9,100%,64%); /*Βάζουμε το βασικό και μετά τις ποσοστώσεις*/
+}
+
+body {
+  background-color:green;
+}
+
+*************************** ΚΩΔΙΚΑΣ HTML ************************************
+Όλα τα tags έχουν την ιδιότητα του id. Μας βοηθά να τα παραμετροποιούμε
+ξεχωριστά.
+
+<h1>
+Welcome to AKMH
+</h1>
+
+<p id="proto">
+We are the best
+</p>
+
+<p id="deutero">
+Forget the rest
+</p>
+
+
+-->
+
+<html>
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <style>
+      h1 {
+        color:blue;
+        font-size:14px;
+        margin-top: 20px;
+      }
+      
+      /*Τα classes εξυπηρετούν ίσως καλύτερα από τα ids */
+      .h1class{
+        text-align:center;
+        color:chocolate;
+      }
+
+      p {
+        color: red;
+        text-align: center;
+      }
+      #proto /*ID*/
+      {
+        padding-top: 5px; /* Κενό από επάνω */
+        padding-bottom: 5px; /* Κενό από κάτω */
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      #deutero
+      {
+        color: Tomato;
+        text-align: center;
+        border:dimgrey 3px solid; /* Πλαίσιο: χρώμα πάχος υφή */
+        outline:black solid 1px; /* Εξωτερική γραμμή: χρώμα υφή πάχος */
+        margin-left:100px; /* Στοίχιση αριστερά: να απέχει 100px από δεξιά */
+        margin-right:100px;
+      }
+      body {
+        background-color:purple; /* Χρώμα υπόβαθρου(γέμισμα) */
+      }
+
+      /* Για όλα τα υπόλοιπα, αν θέλουμε να τα επηρεάσουμε, βάζουμε wildcard */
+      *{
+        color:chartreuse;
+      }
+      </style>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 class="h1class"> <!--επιλέγουμε να το εντάξουμε στο class-->
+    Welcome to AKMH
+    </h1>
+
+    <p id="proto">
+    We are the best
+    </p>
+
+    <p id="deutero">
+    Forget the rest
+    </p>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!--
+
+************************** Δημιουργία πινάκων *********************************
+Ο πίνακας χρησιμοποιείται ως οντότητα μέσα στο body με το tag <table></table>
+
+**************************** Γραμματοσειρές ***********************************
+
+*********************** Ιδιότητες πλαισίων (borders) **************************
+
+-->
+
+<html>
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!--Inline CSS -->
+    <style>
+
+      #workers /* id */
+      {
+
+        border:1px solid #000000; /* Πλαίσιο: πάχος υφή χρώμα */
+
+        /*border-collapse: collapse; /* Για να μην αφήνουμε διάκενα.
+        Η default τιμή είναι separate. Ενεργοποιώντας τη τιμή collapse φαίνεται
+        να μη δουλεύει το border-radius*/
+
+        border-radius: 10px; /* Καμπύλωση γωνιών: μπορούμε να βάλουμε έως
+        4 τιμές και αφορούν συγκεκριμένες γωνίες. Μια τιμή αφορά όλες τις γωνίες*/
+
+        /*Γραμματοσειρές*/
+        font-family: 'ubuntu', 'monospace', 'Times New Roman', 'serif';
+        font-style: normal; /*normal; Η καλύτερη επιλογή για αποφυγή επιπλοκών*/
+        font-weight: bold; /* Έντονη γραμματοσειρά */
+        font-size: 24px; /* Η default τιμή, ακόμη και αν δεν το γράψουμε, είναι
+        16px */
+      }
+      
+      /* Επιδρούμε μόνο στα td του συγκεκριμένου id */
+      #workers td
+      {
+        border:2px solid #000000;
+        border-radius: 5px;
+
+        text-align: center;
+        color: lightcoral;
+        background-color: blue;
+      }
+
+      </style>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <table id="workers"> <!-- Δήλωση πίνακα με id -->
+      <tr> <!-- Table Row -->
+        <td>Admin</td> <!--Table Cells-->
+        <td>admin@somecorp.com</td>
+      </tr>
+      <tr>
+        <td>User1</td>
+        <td>User1@somecorp.com</td>
+      </tr>
+      <tr>
+        <td>User2</td>
+        <td>User2@somecorp.com</td>
+      </tr>
+
+      </table>
+
+
+  </body>
+</html>

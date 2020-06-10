@@ -1,0 +1,10 @@
+select FirstName,MiddleName,LastName 
+from person.person
+where LastName='smith'and FirstName between 'John' and 'phillip'
+
+ή
+
+where LastName='smith' and FirstName like '%A%I%'
+
+
+

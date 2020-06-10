@@ -1,0 +1,3 @@
+select FirstName, MiddleName, LastName /*Επιλογή μόνο των FirstName, MiddleName, LastName*/
+from person.person /*από πίνακα person.person */
+where LastName like 'sy%' /*Που είναι(Φέρε) όλα τα αποτελέσματα με επώνυμο που αρχίζει από sy*/

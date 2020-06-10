@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#first {
+  color: red;
+  text-align: center;
+}
+
+body{
+  background-color: black;
+}
+
+h3 {
+  color:orange;
+  text-align: center;
+}
+
+ul {
+  color: orange;
+  text-align: left;
+  list-style-type: square;
+}
+
+ol {
+  color: red;
+  text-align: left;
+  list-style-type: decimal;
+}

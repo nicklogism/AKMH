@@ -1,0 +1,2 @@
+select max(businessentityid) /* Επιλογή της μέγιστης τιμής (η τελευταία καταχώρηση με αύξοντα αριθμό) */
+from person.BusinessEntity
