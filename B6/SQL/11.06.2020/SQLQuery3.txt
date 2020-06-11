@@ -1,0 +1,7 @@
+/* Ορίζουμε τη myvar ως πίνακα */
+
+DECLARE @myvar table (firstname nvarchar(50), lastname nvarchar(50))
+
+insert into @myvar select firstname,lastname from person.Person where LastName like 'I%'
+
+select *from @myvar 
