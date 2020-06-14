@@ -18,51 +18,58 @@ select [στηλη1],[στήλη2],...,[στήλη Ν] from <όνομα πίνα
 select [στηλη1],[στήλη2],...,[στήλη Ν] from <όνομα πίνακα> 
    where <συνθήκη>
 
-Τελεστές συνθηκών:
->, <, >=, <=,=, <>, !=, !> , !<   πχ [στήλη] > <τιμή>
+**Τελεστές συνθηκών:**
+`>, <, >=, <=,=, <>, !=, !> , !<   πχ [στήλη] > <τιμή>`
 
-AND, OR, NOT
+**AND, OR, NOT, BETWEEN**
 
-BETWEEN
+`[στηλη] BETWEEN 1 AND 10`
 
-[στηλη] BETWEEN 1 AND 10 
+**LIKE**
+`[στηλη] LIKE '%L%'`
 
-LIKE
-[στηλη] LIKE '%L%'
-
-IN 
+**IN** 
 Επιστρέφει TRUE αν η αξία στα αριστερα του IN ταιριάζει με κάποια από τις τιμές
  στην λίστα που δίνουμε μετά το IN. 
+
 π.χ 
 
-[στήλη] in ('A', 'b', '345')
+`[στήλη] in ('A', 'b', '345')`
 
 Τρίτη σύνταξη της select
 
+```
 select [στηλη1],[στήλη2],...,[στήλη Ν] from <όνομα πίνακα> 
    where <συνθήκη>
 order by [στήλη] <asc> <desc>
+```
+   
 H order by ταξινομεί τα αποτελέσματα κατά την στήλη που του δίνουμε είτε 
 σε αύξουσα σειρά (δίνοντας την εντολή asc ή μην δίνοντας τίποτα, καθώς η άυξουσα
 σειρά είναι default) ή κατά φθίνουσα σειρά (δινοντας την εντολή desc).
 
 
 
-Aggragating functios
+**Aggregating functions**
 
 Sum H function sum αθροίζει τα ποσά μίας στήλης. Για να δουλέψει μία 
-aggragating function θα πρέπει να υπάρχει μία στήλη με αριθμητικές τιμές,
+aggregating function θα πρέπει να υπάρχει μία στήλη με αριθμητικές τιμές,
 και θα πρέπει να γκρουπάρουμε τις υπόλοιπες στήλες
 (αν έχουμε μία στήλη δεν χρειάζεται γκρουπάρισμα)
 
 Για το γκρουπάρισμα χρησιμοποιούμε την εντολή group by, και βάζουμε όλες τις 
-στήλες που δεν έχουν aggragating function.
-Π.χ. select col1,col2,..,coln, aggr(colx)
+στήλες που δεν έχουν aggregating function.
+
+Π.χ.
+```
+select col1,col2,..,coln, aggr(colx)
       from table
        where συνθήκη
         group by col1,col2,..,coln
+```
 
-Aggragating functions είναι:
+Aggregating functions είναι:
+
 α) Sum η οποία αθροίζει τις αξίες σε ένα group
 β) min βρίσκει την μικρότερη τιμή ενός group
 γ) max βρίσκει την μεγαλύτερη τιμή ενός group
@@ -73,6 +80,7 @@ Aggragating functions είναι:
 που ορίζουμε, χρειάζεται να χρησιμοποιήσουμε την εντολή having. Με αυτήν, 
 το παράδειγμά μας διαμορφώνεται ως ακολούθως:
 
+```
     select col1,col2,..,coln, aggr(colx)
       from table
        where συνθήκη
@@ -86,14 +94,13 @@ Aggragating functions είναι:
    where ModifiedDate = '2004-03-15'
    group by SalesOrderID
    having sum(LineTotal) > 1000
-
+```
 
 DISTINCT: Χρησιμοποιείται για να δείχνει μόνο μία φορά κάθε γραμμή.
 
-
-
 INSERT:Η εντολή Insert συντάσσεται ως ακολούθως:
 
+```
 INSERT [TOP (<expression>) [PERCENT] ] [INTO] <tabular object> 
 [<column list> ] 
 [OUTPUT <output clause>]
@@ -101,14 +108,14 @@ VALUES (<data values>) [,(<data values>)] [,...n]
 |<table source>
 |EXEC <procedure>
 |DEFAULT VALUES
+```
 
-
-
+```
 insert sales.salesorderheader code , orderqty, productid
 values 25552,30,2558
 
 INSERT INTO <table name> [Column list] <select statement>
-
+```
 
 Στην SQL μπορώ να δημιουργήσω μεταβλητές όπως ακριβώς σε οποιαδήποτε 
 γλώσσα προγραμματισμού. Οι μεταβλητές αυτές μπορεί να είναι οποιουδήποτε
@@ -121,36 +128,40 @@ INSERT INTO <table name> [Column list] <select statement>
 
 πχ
 
-DECLARE @metavliti int;
+`DECLARE @metavliti int;`
 
-
+```
 INSERT INTO <όνομα πίνακα>
 [<λίστα από στήλες>]
 <Εντολή SELECT>
+```
 
 Κάνει ένα Insert βασισμένο σε μία εντολή Select
 
-
-UPDATE:
+UPDATE
 Η εντολή Update χρησιμοποιείται για να αλλάξουμε το περιεχόμενο ενός πεδίου μέσα
 σε μία ήδη υπάρχουσα γραμμή ενός πίνακα.
 
+```
 UPDATE [TOP <expression>] [PERCENT]
 SET <column>=<value>
 [FROM <source table>]
 [WHERE <condition>]
-
+```
 
 Το Inner Join είναι μία εντολή η οποία φέρνει τα κοινά στοιχεία δύο πινάκων. 
 Για να δουλέψει, χρειάζεται στους δύο αυτούς πίνακες να υπάρχει ένα κοινό 
 κλειδί. Η εντολή inner join συντάσσεται ως ακολούθως:
 
+```
 select <λίστα από πεδία> from
 πίνακας Α
 [inner] join πίνακας Β
 on κλειδί πίνακα Α = κλειδί πίνακα Β
 [where <συνθήκη>]
+```
 
+```
 select pp.FirstName,pp.LastName,hre.Gender,
 pe.EmailAddress, pa.AddressLine1
 from HumanResources.Employee hre
@@ -164,6 +175,7 @@ join Person.Address pa
 on pbea.AddressID = pa.AddressID
 where hre.Gender = 'F'
 order by pp.LastName,pp.FirstName
+```
 
 
 
