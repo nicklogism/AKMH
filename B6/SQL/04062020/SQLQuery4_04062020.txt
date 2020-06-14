@@ -1,4 +1,0 @@
-select salesorderid,sum(linetotal) /*Επιλογή κλειδιών (salesorderid) , άθροισμα της linetotal */
-from sales.salesorderdetail
-group by salesorderid /* Επιλογή από τον πίνακα sales.SalesOrderDetail*/
-/*¨Οποτε έχω ένα aggregate function ΟΛΑ τα πεδία που ΔΕΝ είναι aggregated πρέπει να μπουν σε Group.*/
