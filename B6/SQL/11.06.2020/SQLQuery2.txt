@@ -1,6 +1,0 @@
-DECLARE @myvar int
-
-/* Ορίζω στη μεταβλητή μια εντολή */
-set @myvar = (select AVG(orderqty) from sales.SalesOrderDetail where datepart(mm,modifieddate) = 6 and datepart(yyyy,modifieddate) = 2003)
-
-select @myvar
