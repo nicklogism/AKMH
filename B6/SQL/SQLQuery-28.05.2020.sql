@@ -7,4 +7,3 @@ WHERE LastName='smith' AND FirstName BETWEEN 'John' AND 'phillip';
 WHERE LastName='smith' AND FirstName LIKE '%A%I%';
 
 
-
