@@ -2,5 +2,5 @@ CREATE TABLE test2
 (
 kodikos VARCHAR(10) NOT NULL PRIMARY KEY,
 data INT NOT NULL,
-fkey VARCHAR(10) NOT NULL FOREIGN KEY REFERENCES test1(kodikos) /* Δημιουργώ και Foreign Key συνδεδεμένο με το PK του πίνακα Test1 */
+fkey VARCHAR(10) NOT NULL FOREIGN KEY REFERENCES test1(kodikos) /* Ξ”Ξ·ΞΌΞΉΞΏΟ…ΟΞ³Ο ΞΊΞ±ΞΉ Foreign Key ΟƒΟ…Ξ½Ξ΄ΞµΞ΄ΞµΞΌΞ­Ξ½ΞΏ ΞΌΞµ Ο„ΞΏ PK Ο„ΞΏΟ… Ο€Ξ―Ξ½Ξ±ΞΊΞ± Test1 */
 );
