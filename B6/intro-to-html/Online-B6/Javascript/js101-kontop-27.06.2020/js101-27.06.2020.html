@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<script>
+	// Δήλωση μεταβλητών
+	var sss='σωστό';
+	var aaa=`Το αποτέλεσμα είναι ${sss}.`;
+	var x=50;
+	var y=80;
+	var string1=`Το ${x} είναι μικρότερο του ${y}:`; // συμπεριφορά ως κώδικα
+	
+	// Δημιουργία Object με properties name & age
+	var obj={
+	name: 	"Γιώργος",
+	age:	25
+	}; 
+	
+	// Object με setters / getters
+	var obj2={};
+	//setter
+	obj2.identity=5;
+	//getter
+	
+	// prompt Εισαγωγή τιμών από χρήστη
+	
+	/* Ζητάμε την ηλικία και την αποθηκεύουμε παράλληλα σε μια μεταβλητή 
+	yourage. Το 25 είναι default τιμή που μπορούμε όμως να αλλάξουμε. 
+	var yourage = prompt('Πόσο χρονών είσαι;' , 25);
+	alert (`Πρέπει να είσαι άνω των ${yourage} για να εισέλεθεις`);
+	*/
+	
+	/* Μήνυμα επιβεβαίωσης
+	var epivevaiwsh = confirm("Θες να αποχωρήσεις από τη σελίδα;");*/
+	
+	// Εμφάνισε σε ιστοσελίδα
+	document.write(obj2.identity);
+	document.write("<br>"); // new line
+	
+	document.write(string1);
+	document.writeln();
+	document.write(x<y);
+	document.write("<br>"); 
+	
+	document.write(aaa);
+	document.write("<br>"); 
+	
+	document.writeln(); // space
+	document.write('O');
+	document.writeln();
+	document.write(obj.name);
+	document.writeln();
+	document.write('είναι');
+	document.writeln();
+	document.write(obj.age);
+	
+	// Πράξεις & Περίεργα
+	
+	document.write("<br>"); 
+	document.write(`Υπόλοιπο διαίρεσης 5 δια 3: ${5%3}`);
+	
+	document.write("<br>"); 
+	document.write('Concatenate: 1 + "2"= ');
+	document.write(1 + "2"); // concatenate
+	
+	document.write("<br>"); 
+	document.write('1 - "2"= ');
+	document.write(1 - "2");
+	
+	document.write("<br>"); 
+	document.write('"10" / "2"= ');
+	document.write('10' / '2');	
+	
+	document.write("<br>");
+	document.write('Αριθμοποίηση του (boolean) true ');
+	document.write("<br>");
+	document.write('+true= ');
+	document.write(+true);
+	
+	document.write("<br>");
+	var ena='1';
+	var dyo='2';
+	//alert(ena+dyo);
+	document.write(ena+dyo); // concatenate
+	
+	document.write("<br>");
+	document.write(+ena  +  +dyo); // Δύο κενά για μετατροπή σε αριθμούς.
+	
+	document.write("<br>");
+	document.write(Number(ena)+Number(dyo)); // Το ίδιο. Πιο επίσημος τρόπος.
+	
+	document.write("<br>");
+	document.write('Προτεραιότητα πράξεων: πχ. 1+2*5= ');
+	document.write(1+2*5);
+	
+	document.write("<br>");
+	document.write('Προτεραιότητα πράξεων: πχ. (1+2)*5= ');
+	document.write((1+2)*5);
+	
+	//Chaining (απόδοση τιμής αλυσίδας)
+	var a,b,c,d,d1;
+	a=b=c=d=d1=45+3;
+	document.write("<br>");
+	document.write(a, b, c, d, d1);
+	
+	document.write("<br>");
+	var z=2; 
+	z*=2 + 2; // Προσοχή εδώ. Πρώτα θα κάνει τη πρόσθεση και μετά τον πολλ/σμο.
+	document.write(z);
+	document.write("<br>");
+	a=z--; // μοναδιαίος τελεστής.
+	document.write(z); //Πρώτα μειώνεται η τιμή (στη μνήμη)
+	document.write("<br>");
+	document.write(a); //Η a δεν θα την πάρει.
+	
+	document.write("<br>");
+	document.write("<br>");
+	
+</script>
+
+</body>
+
+</html>
