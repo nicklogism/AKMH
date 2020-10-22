@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<style>
+
+body{
+	margin:auto;
+}
+
+#wrapper{
+	width:1200px;
+    background:orange;
+    margin:auto;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    color:#999;
+}
+
+#header{
+	height:140px;
+    background:red;
+    font-size:2em;
+    text-align:center;
+    line-height:140px;
+}
+
+#footer{
+	height:100px;
+    background:blue;
+}
+
+#main{
+
+	height:400px;
+    background:rgba(153,102,204,1);
+
+}
+    
+#sidebar{
+	width:25%;
+    height:400px;
+    background:green;
+    float:left;
+
+}
+
+#content{
+	width:75%;
+    height:400px;
+    background:#5C9;
+    float:right;
+
+}
+
+/* Επειδή χρησιμοποιούμε float σε <div>, πρέπει να κλείνει και να καθαρίζει η ροή. Διαφορετικά μπορεί να έχουμ προβλήματα στο layout */
+.clear{
+
+	clear:both;
+
+}
+
+</style>
+
+
+<body>
+	<div id="wrapper">
+
+		<div id="header">HEADER</div>
+        
+        <div id="main">
+        	<div id="sidebar">SIDEBAR </div>
+        	<div id="content">CONTENT</div>
+            <div class="clear"></div> <!--Κλείσιμο Ροής-->
+        </div>
+        
+        <div id="footer">FOOTER </div>
+
+	</div>
+
+
+</body>
+</html>
