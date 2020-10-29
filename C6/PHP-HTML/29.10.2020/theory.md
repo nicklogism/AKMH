@@ -3,7 +3,7 @@
 * Στο εργαστήριο δουλεύουμε σε XAMPP
 * Ως editor όποιον μας βολεύει (Sublime, Dreamweaver, Notepad++ κλπ)
 
-Ξεκινάμε πάντα με <br?
+Ξεκινάμε πάντα με `<?php` και κλείνουμε με `?>`
 
 ```
 <?php
@@ -15,10 +15,12 @@
 ?>
   
 ```
-Αποθηκεύουμε σε C:\xampp\htdocs\plir-c6\lesson1\index.php
+Αποθηκεύουμε σε C:\xampp\htdocs\plir-c6\lesson1\index.php<br>
+Το παραπάνω path (C:\xampp\htdocs\) αντιστοιχεί σε URL: http://localhost<br>
+1. Ξεκινάμε πρώτα τον Apache από το xampp-control 
+2. Έπειτα ανοίγουμε έναν browser και γράφουμε localhost/plir-c6/ και κλικάρουμε στο Lesson1. Εφόσον υπάρχει αρχείο index.php θα ανοίξουν τα περιεχόμενα της. 
 
-* Το παραπάνω path (C:\xampp\htdocs\) αντιστοιχεί σε URL: http://localhost
-* Ξεκινάμε πρώτα τον Apache από το xampp-control 
-* Έπειτα ανοίγουμε έναν browser και γράφουμε localhost/plir-c6/ και κλικάρουμε στο Lesson1
+### PHP Data Types
+βλ. index.php
 
   
