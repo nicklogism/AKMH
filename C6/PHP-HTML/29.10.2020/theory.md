@@ -21,6 +21,6 @@
 2. Έπειτα ανοίγουμε έναν browser και γράφουμε localhost/plir-c6/ και κλικάρουμε στο Lesson1. Εφόσον υπάρχει αρχείο index.php θα ανοίξουν τα περιεχόμενα της. 
 
 ### PHP Data Types
-βλ. index.php
+βλ. data-types.php
 
   
