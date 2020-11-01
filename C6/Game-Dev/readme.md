@@ -1,4 +1,4 @@
-## OpenGL, Unreal, 3D Studio (Γ.Σαγιακ..)
+## OpenGL, Unreal, 3ds Max (Γ.Σαγιακ..)
 
 * OpenGL: Βιβλιοθήκη γραφικών
 * 3D Studio: Δημιουργία μοντέλων (autodesk.com)
