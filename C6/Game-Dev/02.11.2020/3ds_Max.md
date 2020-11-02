@@ -1,8 +1,8 @@
-### Viewports
+### Viewports (Τα τέσσερα βασικά που βλέπεις όταν ανοίγει το πρόγραμμα)
 
 * Othographic
 
-1. Font 
+1. Front 
 2. Top
 3. Left
 4. Right
@@ -11,6 +11,7 @@
 7. Othographic (user)
 
 * Prespective
+
 1. Prespective
 2. Cameras
 3. Lights ($)
@@ -54,8 +55,12 @@
 |Instance    |   Στα αντικείμενα που είναι instanced η δημιουργία της γεωμετρίας (σχήμα) του αντικειμένου υπολογίζεται μια φορά ασχέτως του πλήθους των αντικειμένων. |
 |Reference   |  Υβρύδιο του Copy και Instance |
 
+**Instance**
 
+<img src="https://kcwbpq.am.files.1drv.com/y4mdEc39hYobQtJ4aesMHrmK-JxyWEB_QGs016Qn_E6zug8Q_gX1fl4_qcqveRFr68YE90nsTS8OP4yLMHdTpHlbvox6xyk-EMy2Vr7OZAjS4BNg7JUaOA_INnZm-fT4H9FAM1Chpq7OeI2Bf1AbJURX7IanoGuAPzLvMTKqHpc-AVDIW7JtuyzTk3vC4gB77pgPxO1uLANvCa5dwv_TBBpew/Instance.jpg" title="Instance" width="400">
 
 ### Object Anatomy
 
-![](https://am3pap006files.storage.live.com/y4mIFC8RwFVM6uRx5uWaA5L4Jh50ksxcyb07Yc9i12iwDBCPoTeXQ2r5UHJcpJmCqxfAc0Fx0g7acjQjl3oWQqP-A4n4xy7MozKU29GL1lQGORNFNdzeGTTL3UrzjX4K--rRG4KVgkAXhc_zvNHa0Hxk8prYVvopLVU7Kp3MTaWfOEI0g3kIGi5rc8b5GZ-zPgKyoDOlxyuUCilZneacvNT9Q/object_anatomy.jpg?psid=1&width=618&height=539)
+<img src="https://kswcpq.am.files.1drv.com/y4mIH0K6lKtcAUQM-uHXqu00cwc6pN6mjjFHt-Vg-JMhrIJhQ0droHPCmy7GNy_ztEDfRvoWl1r64tx4FUloc-dZgPlrEEeKj9brTPIHJCxorfR889EhcZG0Wl03lLMoibrP7U1Ggb-clGgChC0imbXlVJlv8E3Yet5qdSHvtEZpoWbRXhtrCiHBiCwfj0KMCKyAWXnMyyF-y_ECbM64dqAvA/object_anatomy.jpg" title="Object Anatomy" width="400">
+
+
