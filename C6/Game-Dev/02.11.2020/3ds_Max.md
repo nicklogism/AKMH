@@ -24,8 +24,16 @@
 |Middle Mouse Button | Pan (Viewport) |
 |Middle Mouse Button (Scrollwheel) | Zoom In/Out (viewport) |
 |Alt + MMB | Rotate (Viewport)|
-|Q | Select|
-|W| Translate (Move)|
-|E| Rotate|
-|R| Scale|
+|q | Select|
+|w| Translate (Move)|
+|e| Rotate|
+|r| Scale|
 |+/-| Change Gizmo Size|
+|F3|Shading Toggle|
+|F4|WireFramte (Edged Faces) Toogle|
+|g |Grid toogle|
+|7 |Statistics|
+|z|Zoom Extents|
+|s|Snap(move) Toogle|
+|a|angle snap|
+|RMD σε εικονίδιο του μενού | Properties|
