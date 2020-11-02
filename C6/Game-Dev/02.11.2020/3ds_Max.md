@@ -36,6 +36,7 @@
 |z|Zoom Extents|
 |s|Snap(move) Toogle|
 |a|angle snap|
+|alt+w|Max/Restore (Viewport Toogle)|
 |RMD σε εικονίδιο του μενού | Properties|
 |Space|Lock Selection|
 |Insert|Move Pivot|
@@ -44,6 +45,16 @@
 -Space - Προσοχή στη χρήση!
 -Insert - Προσοχή στη χρήση!
 ```
+
+### Αντιγραφή αντικειμένων (Shift)
+
+|Clone Option|Λειτουργία|
+|------------|----------|
+|Copy        |   Δημιουργεί ανεξάρτητα μεταξύ τους αντικείμενα στη μνήμη   |
+|Instance    |   Στα αντικείμενα που είναι instanced η δημιουργία της γεωμετρίας (σχήμα) του αντικειμένου υπολογίζεται μια φορά ασχέτως του πλήθους των αντικειμένων. |
+|Reference   |  Υβρύδιο του Copy και Instance |
+
+
 
 ### Object Anatomy
 
