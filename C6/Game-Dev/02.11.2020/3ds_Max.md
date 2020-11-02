@@ -37,9 +37,10 @@
 |s|Snap(move) Toogle|
 |a|angle snap|
 |RMD σε εικονίδιο του μενού | Properties|
-|```diff - Space ```|```diff - Lock Selection ```|
+|Space|Lock Selection|
 |Insert|Move Pivot|
 
 ```diff 
-- Space 
+-!Space - Προσοχή στη χρήση!
+-!Insert - Προσοχή στη χρήση!
 ```
