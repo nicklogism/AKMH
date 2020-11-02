@@ -24,7 +24,6 @@
 |Middle Mouse Button | Pan (Viewport) |
 |Middle Mouse Button (Scrollwheel) | Zoom In/Out (viewport) |
 |Alt + MMB | Rotate (Viewport)|
-
 |Q | Select|
 |W| Translate (Move)|
 |E| Rotate|
