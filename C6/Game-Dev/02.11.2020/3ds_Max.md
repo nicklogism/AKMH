@@ -8,7 +8,7 @@
 4. Right
 5. Bottom
 6. Back
-7.Othographic (user)
+7. Othographic (user)
 
 * Prespective
 1. Prespective
