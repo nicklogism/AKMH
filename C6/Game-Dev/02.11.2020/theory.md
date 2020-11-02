@@ -1,9 +1,9 @@
 ### Fonts (Γραμματοσειρές)
 
 
-|  |Bitmap/Bitmap  | Vector |
-|-|-|-|
-| Font1 .fon | True Type Fonts *.TTF |  |
+|Bitmap/Bitmap  | Vector |
+|-|-|
+| Font1 .fon | True Type Fonts *.TTF | 
 
 
 Τα Fonts αποθηκεύονται σε ξεχωριστό κατάλογο (συνήθως μέσα στους καταλόγους του Λειτουργικού Συστήματος)
