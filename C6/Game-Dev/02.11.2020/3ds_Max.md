@@ -39,3 +39,5 @@
 |RMD σε εικονίδιο του μενού | Properties|
 |```diff - Space ```|```diff - Lock Selection ```|
 |Insert|Move Pivot|
+
+```diff - Space ```
