@@ -41,7 +41,7 @@
 |RMD σε εικονίδιο του μενού | Properties|
 |Space ⚠️|Lock Selection|
 |Insert ⚠️|Move Pivot|
-|**⚠️ Προσοχή στη χρήση**| |
+|**⚠️ Προσοχή στη χρήση**|
 
 
 
