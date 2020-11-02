@@ -40,4 +40,6 @@
 |```diff - Space ```|```diff - Lock Selection ```|
 |Insert|Move Pivot|
 
-```diff - Space ```
+```diff 
+- Space 
+```
