@@ -51,11 +51,13 @@
 |:------------|----------|
 |Copy        |   Δημιουργεί ανεξάρτητα μεταξύ τους αντικείμενα στη μνήμη   |
 |Instance    |   Στα αντικείμενα που είναι instanced η δημιουργία της γεωμετρίας (σχήμα) του αντικειμένου υπολογίζεται μια φορά ασχέτως του πλήθους των αντικειμένων. |
-|Reference   |  Υβρύδιο του Copy και Instance |
+|Reference   |  Είναι συνδυασμός του Instance & Copy. Τα μοντέλα λειτουργούν μεταξύ τους σαν instance μέχρι ένα σημείο (reference point). Από το Reference Point και μετά λειτουργούν σαν copy (δηλ. όλοι υπολογισμοί τους από το ref.point και μετά γίνονται ξεχωριστά, ακόμα και αν είναι ίδιοι.) |
 
 **Instance**
 
 <img src="https://kcwbpq.am.files.1drv.com/y4mdEc39hYobQtJ4aesMHrmK-JxyWEB_QGs016Qn_E6zug8Q_gX1fl4_qcqveRFr68YE90nsTS8OP4yLMHdTpHlbvox6xyk-EMy2Vr7OZAjS4BNg7JUaOA_INnZm-fT4H9FAM1Chpq7OeI2Bf1AbJURX7IanoGuAPzLvMTKqHpc-AVDIW7JtuyzTk3vC4gB77pgPxO1uLANvCa5dwv_TBBpew/Instance.jpg" title="Instance" width="400">
+
+**Reference**
 
 ### Object Anatomy
 
