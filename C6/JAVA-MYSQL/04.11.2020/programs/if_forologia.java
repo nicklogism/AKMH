@@ -12,8 +12,7 @@
 
 Για μεγαλύτερα ποσά είναι 25 % του εισοδήματος, πέραν των
 3000 Ευρώ
-*/
-
+ */
 package javaapplication1;
 
 import java.util.Scanner;
@@ -25,19 +24,19 @@ public class JavaApplication1 {
         double income, tax;
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Eisagete to eisodhma sas: ");
+        System.out.println("Εισάγετε το εισόδημα σας: ");
         income = in.nextDouble();
 
         if (income <= 1000) {
-            System.out.println("Tax=0");
+            System.out.println("Φόρος που αναλογεί=0");
         } else if (income <= 2000) {
-            System.out.println("Tax=200€");
+            System.out.println("Φόρος που αναλογεί=200€");
         } else if (income <= 3000) {
             tax = 200 + ((income - 2000) * 0.15);
-            System.out.println("Tax="+tax);
+            System.out.println("Φόρος που αναλογεί=" + tax);
         } else {
             tax = 200 + (1000 * 0.15) + ((income - 3000) * 0.25);
-            System.out.println("Tax="+tax);
+            System.out.println("Φόρος που αναλογεί=" + tax);
         }
     }
 }
