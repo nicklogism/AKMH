@@ -12,6 +12,6 @@
  *Όλες οι βασικές σημειώσεις έχουν δοθεί σε Google Drive*
  
  ### IDE & JDK
- Netbeans IDE. Κατεβάζουμε από netbeans.org. <br>
- **Πριν** τρέξουμε το .exe του Netbeans, κατεβάζουμε κάνουμε εγκατάσταση  το JDK  oracle.com 
+ Netbeans IDE. Κατεβάζουμε από Netbeans.org. <br>
+ **Πριν** τρέξουμε το .exe του Netbeans, κατεβάζουμε κάνουμε εγκατάσταση  το JDK από Oracle.com 
  
