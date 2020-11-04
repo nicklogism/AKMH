@@ -1,11 +1,10 @@
 ## JAVA
 * Κύρια χρήση της Java, πλέον, είναι η κατασκευή εφαρμογών για κινητές συσκευές (Smartphones, Tablets κλπ) και όχι τόσο για Desktop. Γράφουμε το λεγόμενο Application Logic μιας εφαρμογής.
 <br>
-
 * Μια εφαρμογή συνήθως αποτελείται από τα τρία παρακάτω στοιχεία:
- 1. DB
- 2. Application logic
- 3. Presentation
+  * DB
+  * Application logic
+  * Presentation
  <br>
  
  Με τη Java μπορούμε να ασχοληθούμε με το δεύτερο κομμάτι από τα παραπάνω.
