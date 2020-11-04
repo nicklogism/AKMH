@@ -39,8 +39,8 @@
 |a|angle snap|
 |alt+w|Max/Restore (Viewport Toogle)|
 |RMD σε εικονίδιο του μενού | Properties|
-|Space ⚠️ *Προσοχή στη χρήση* |Lock Selection|
-|Insert ⚠️ *Προσοχή στη χρήση* |Move Pivot|
+|Space :warning: *Προσοχή στη χρήση* |Lock Selection|
+|Insert :warning: *Προσοχή στη χρήση* |Move Pivot|
 
 
 
