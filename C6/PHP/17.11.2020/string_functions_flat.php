@@ -138,12 +138,26 @@
 <div>
 <h3> trim(), ltrim(), rtrim() </h3>
 Παράδειγμα : <br>
-
+<pre>
+&lt;?php
+	$str = " Hello World! "; 
+	print "|".$str."|";
+	print "|".trim($str)."|";
+	print "|".ltrim($str)."|";
+	print "|".rtrim($str)."|";
+?&gt;
+</pre>
 
 Αποτέλεσμα : <br>
 <?php
-
-
+$str = " Hello World! "; 
+print "|".$str."|";
+print "<br>";
+print "|".trim($str)."|";
+print "<br>";
+print "|".ltrim($str)."|";
+print "<br>";
+print "|".rtrim($str)."|";
 ?>
 
 </div>
@@ -152,29 +166,95 @@
 <div>
 <h3> substr_replace() </h3>
 Παράδειγμα : <br>
-
+<pre>
+&lt;?php
+	$str = "Hello World!"; 
+	$replacement = "friends";
+	$start_selection = 6;
+	$end_selection   = 5;
+	print substr_replace($str, $replacement, $start_selection, $end_selection);
+?&gt;
+</pre>
 
 Αποτέλεσμα : <br>
-
+<?php
+	$str = "Hello World!"; 
+	$replacement = "friends";
+	$start_selection = 6;
+	$end_selection   = 5;
+	print substr_replace($str, $replacement, $start_selection, $end_selection);
+?>
 </div>
 
 
 <div>
 <h3> str_replace() </h3>
 Παράδειγμα : <br>
-
+<pre>
+&lt;?php
+	$str     = "The 2016 real champion in champions league was Real Madrid"; 
+	$search  = "champion";
+	$replace = "loser";
+	print str_replace($search, $replace, $str);
+	
+	$search = "Real Madrid";
+	$replace= "Panathinaikos";
+	print str_replace($search, $replace, $str);
+	
+	$search  = array("champion", "Real Madrid");
+	$replace = array("loser",    "Panathinaikos");
+	print str_replace($search, $replace, $str);
+?&gt;
+</pre>
 
 Αποτέλεσμα : <br>
-
+<?php
+	$str     = "The 2016 real champion in champions league was Real Madrid"; 
+	$search  = "champion";
+	$replace = "loser";
+	print str_replace($search, $replace, $str);
+	print "<br>";
+	
+	$search = "Real Madrid";
+	$replace= "Panathinaikos";
+	print str_replace($search, $replace, $str);
+	print "<br>";
+	
+	$search  = array("champion", "Real Madrid");
+	$replace = array("loser",    "Panathinaikos");
+	print str_replace($search, $replace, $str);
+	print "<br>";
+?>
 </div>
 
 <div>
 <h3> nl2br() -- (new line to html tag break) </h3>
 Παράδειγμα : <br>
-
+<pre>
+&lt;?php
+	$str  = "First line  \n"; 
+	$str .= "Second line \n";
+	$str .= "Third line  \n";
+	print "Output without nl2br() function";
+	print $str;
+	print "Output with nl2br() function";
+	print nl2br($str);
+?&gt;
+</pre>
 
 Αποτέλεσμα : <br>
-
+<?php
+	$str  = "First line  \n"; 
+	$str .= "Second line \n";
+	$str .= "Third line  \n";
+	print "Output without nl2br() function";
+	print "<br>";
+	print $str;
+	print "<br><br>";
+	print "Output with nl2br() function";
+	print "<br>";
+	print nl2br($str);
+?>
 </div>
 
 </body>
