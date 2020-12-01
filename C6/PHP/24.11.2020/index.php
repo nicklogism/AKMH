@@ -241,36 +241,36 @@
         "dogs"=>array(
 
             "Pluto"=>array(
-                "comic"=>"Mickey Mouse",
-                "color"=>"Yellow"
+                "Comic"=>"Mickey Mouse",
+                "Color"=>"Yellow"
 
             ),
             "Rantaplan"=>array(
-                "comic"=>"Lucky Luke",
-                "color"=>"Brown"
+                "Comic"=>"Lucky Luke",
+                "Color"=>"Brown"
 
             ),
             "Milou"=>array(
-                "comic"=>"Tin Tin",
-                "color"=>"White"
+                "Comic"=>"Tin Tin",
+                "Color"=>"White"
             )
 
         ),
         "cats"=>array(
 
             "Tom"=>array(
-                "comic"=>"Tom & Jerry",
-                "color"=>"Grey-White"
+                "Comic"=>"Tom & Jerry",
+                "Color"=>"Grey-White"
             ),
 
             "Sylvester"=>array(
-                "comic"=>"Looney Tunes",
-                "color"=>"Black-White"
+                "Comic"=>"Looney Tunes",
+                "Color"=>"Black-White"
             ),
 
             "Garfield"=>array(
-                "comic"=>"Garfield",
-                "color"=>"Orange"
+                "Comic"=>"Garfield",
+                "Color"=>"Orange"
             )
 
         )
@@ -294,7 +294,7 @@
     print "<br>"; 
     print "<br>"; 
     
-    print_r($pets_multi['dogs']['Pluto']['comic']);
+    print_r($pets_multi['dogs']['Pluto']['Comic']);
 
     print "<br>"; 
     print "<br>"; 
@@ -309,19 +309,14 @@
     print "<br>"; 
     print "<br>"; 
 
-    foreach($pets_multi['dogs'] as $dogs){
-        print_r($dogs);
+    foreach($pets_multi['dogs'] as $pet=>$props){
+        print "Pet: $pet <br>";
+            foreach($props as $propName => $propVal){
+                print  "$propName : $propVal <br>";
+            }
         print "<br>";
     }
-    print "<br>";
-    
-
-
-
     ?>
-
-    
-    
     </div>
 
 </body>

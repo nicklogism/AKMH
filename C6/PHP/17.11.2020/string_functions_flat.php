@@ -115,7 +115,7 @@
 &lt;?php
 	$str = "Hello World!";
 	$start_pos = 3;
-	$num_chars = 8;
+	$num_chars = 6;
 	print substr($str,$start_pos);
 	print substr($str, $start_pos, $num_chars);
 
@@ -127,7 +127,7 @@
 <?php
 	$str = "Hello World!";
 	$start_pos = 3;
-	$num_chars = 8;
+	$num_chars = 6;
 	print substr($str,$start_pos);
 	print "<br>";
 	print substr($str, $start_pos, $num_chars);
