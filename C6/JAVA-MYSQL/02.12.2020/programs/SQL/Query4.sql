@@ -5,3 +5,9 @@
 Πίνακες: Humanresources.Employeepayhistory, Humanrecources.Employee.DepartmentHistory, Humanresources.Department
 
 */
+
+SELECT DISTINCT Name AS DepartmentName, Rate*880 AS SalaryAVG
+FROM HumanResources.EmployeePayHistory HREPH
+JOIN HumanResources.EmployeeDepartmentHistory HREDH ON HREPH.BusinessEntityID = HREDH.BusinessEntityID
+JOIN HumanResources.Department HRD ON HREDH.DepartmentID = HRD.DepartmentID
+ORDER BY SalaryAVG;
