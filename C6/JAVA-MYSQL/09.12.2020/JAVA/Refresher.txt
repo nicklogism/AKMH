@@ -1,0 +1,44 @@
+static
+public
+package
+int,float,double,char
+string
+import
+while
+for
+if
++-*/%=
+System.out.println
+System.out.printf
+Immutable strings
+Event
+textfield
+label
+button
+textarea
+Integer
+Double
+Float
+parse[int,double,float]
+getText
+setText --> To setText σβήνει το περιεχόμενο πριν βάλει το καινούριο.
+toString()
+Scanner
+nextInt
+nextDouble
+nextLine
+JOptionPane
+showMessageDialog
+showInputDialog
+Random
+Arrays
+append
+RadioButon
+isSelected
+buttongroup
+setSelected
+classes
+  definition
+  class-object
+  constructor
+  data
