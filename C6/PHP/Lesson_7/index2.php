@@ -41,11 +41,10 @@
 		background:#F7F7F7;
 	}
 	
-	#members img{
-		border-radius:50%;
+	.pic{
+		border-radius:30%;
 		box-shadow:3px 3px 6px #555;
 	}
-
 </style>
 </head>
 
@@ -82,7 +81,7 @@
 				$pic       = $row['pic'];
 				$pic_tag   = '';
 				if($pic){
-					$pic_tag = "<img src='$pic'>";
+					$pic_tag = "<img src='$pic' class='pic'>";
 				}
 				
 				if($bg == 'even'){
@@ -100,8 +99,17 @@
 				<td class="<?= $bg ?>"> <?= $username   ?> </td>
 				<td class="<?= $bg ?>"> <?= $pic_tag    ?> </td>
 				
-				<td class="<?= $bg ?>"> <a href="edit_member.php?id=<?= $id ?>"> Edit </a> </td>
-				<td class="<?= $bg ?>"> <a href="delete_member.php?id=<?= $id ?>" onclick="return confirm('Delete is permanent. Proceed ?')"> Delete </a></td>
+				<td class="<?= $bg ?>" align="center"> 
+					<a href="edit_member.php?id=<?= $id ?>">   
+						<img src="pics/edit.png" width="26">   
+					</a> 
+				</td>
+				
+				<td class="<?= $bg ?>" align="center"> 
+					<a href="delete_member.php?id=<?= $id ?>" onclick="return confirm('Delete is permanent. Proceed ?')"> 
+						<img src="pics/delete.png" width="26">   
+					</a> 
+				</td>
 				</tr>
 		<?php
 		
