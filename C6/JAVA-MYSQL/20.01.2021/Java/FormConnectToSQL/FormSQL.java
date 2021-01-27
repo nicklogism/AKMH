@@ -12,7 +12,7 @@ import java.sql.*;
 
 public class FormSQL extends javax.swing.JFrame {
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "**************************";
+    private static final String PASSWORD = "root";
     private static final String CONN_STRING = "jdbc:mysql://localhost:3360/adventureworks";
 
     /**
@@ -43,7 +43,7 @@ public class FormSQL extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setText("ΕΜΦΑΝΙΣΗ");
+        jButton1.setText("Ε�?ΦΑ�?ΙΣΗ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -94,7 +94,7 @@ public class FormSQL extends javax.swing.JFrame {
         try {
             // Connection initialize
             conn = DriverManager.getConnection(CONN_STRING,USERNAME,PASSWORD);
-            //Δημιουργία statement object που θα περιέχει την εντολή SQL που θέλουμε να τρέξει.
+            //Δημιου�?γία statement object που θα πε�?ιέχει την εντολή SQL που θέλουμε να τ�?έξει.
             Statement stmt = (Statement) conn.createStatement();
             String st = 
             "select employeeid,firstname,lastname,"
@@ -104,8 +104,8 @@ public class FormSQL extends javax.swing.JFrame {
                         "on employee.contactid =contact.contactid " +
                         "where lastname like '"+
             jTextField1.getText().toString()+"'";
-            //Δημιουργώ ένα containter, (resultset) που θα δέχεται τα αποτελέσματα
-            // της εκτέλεσης του query (stmt) χρησιμοποιώντας τη μέθοδο method executeQuery(st)
+            //Δημιου�?γ�? ένα containter, (resultset) που θα δέχεται τα αποτελέσματα
+            // της εκτέλεσης του query (stmt) χ�?ησιμοποι�?ντας τη μέθοδο method executeQuery(st)
             ResultSet rs = stmt.executeQuery(st);
             while (rs.next()) {
                 String ID = rs.getObject(1).toString();
