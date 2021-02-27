@@ -7,4 +7,4 @@
 * Δημιουργούμε κατηγορίες (Categories)
 * Κάνουμε τη πρώτη μας δημοσίευση (Post) κάτω από συγκεκριμένη κατηγορία και με Featured Image
 
-* Video File: No Video Reordered
+* Video File: No Video Reordered 
