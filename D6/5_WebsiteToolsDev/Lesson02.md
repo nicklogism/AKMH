@@ -18,5 +18,5 @@
 * Ρυθμίζουμε το αρχείο config.php για να ενημερώσουμε τα paths ώστε να "παίζει" σωστά ο file manager.
 * Ενημερώνουμε και τα paths μέσα στο index.php
 
-- - 
+- - - - 
 * Video Files: %userprofile%\OneDrive\Camtasia-Captures\25-02-2021
