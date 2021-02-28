@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App2</string>
+    <string name="username">Username</string>
+    <string name="username_hint">Write here</string>
+</resources>
