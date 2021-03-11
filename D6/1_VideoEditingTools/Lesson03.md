@@ -8,5 +8,5 @@
 * Κάνουμε export το τελικό βίντεο σε mp4 (H264)
     * Προσοχή στο export να έχει επιλεγεί όλο το sequence.
 
-* Βίντεο μαθήματος: βλ. %userprofile%\OneDrive\ShareX-Captures\09-03-2021
+* Βίντεο μαθήματος: βλ. %userprofile%\OneDrive\Camtasia-Captures\09-03-2021
 * Αρχείο: E:\AdobePremierProjects\prem1
