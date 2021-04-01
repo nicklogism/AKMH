@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Intro</title>
+<style>
+    div {
+        width: 80%;
+        padding: 20px;
+        border: 1px gray solid;
+        margin: 10px auto 10px auto;
+    }
+
+    .box {
+        width: 200px;
+        padding: 20px;
+        background: cyan;
+    }
+</style>
+
+<script>
+    /*
+    Άλλαξε το χρώμα της γραμματοσειράς και του background αυτής
+    */
+    function changeDemo() {
+        document.getElementById('demo').innerHTML = "Demo Changed";
+        document.getElementById('demo').style.color = "red";
+        document.getElementById('demo').style.backgroundColor = "yellow";
+    }
+
+    /*
+    Εκτύπωσε αριθμούς από 1-10 στην κονσόλα (F12)
+    */
+
+    function countDemo() {
+        for(var i=1; i<=10; i++) {
+            console.log('i='+i);
+        }
+    }
+
+    /*
+    Αλλαγή εικόνας με rollover του mouse (onmouseover, onmouseleave)
+    */
+
+    function rollOver(elem, source) {
+        document.getElementById(elem).src = source;
+
+    }
+
+    /*
+    Απόκρυψη/Εμφάνιση εικόνας με πάτημα κουμπιού (2 ξεχωριστές functions)
+    */
+
+    function hideDemo(elem) {
+        document.getElementById(elem).style.display = "none";
+    }
+
+    function showDemo(elem) {
+        document.getElementById(elem).style.display = "block";
+    }
+
+     /*
+    Απόκρυψη/Εμφάνιση εικόνας με πάτημα κουμπιού (1 function)
+    */
+
+    function hideShowDemo(elem, val) {
+        document.getElementById(elem).style.display = val;
+    }
+</script>
+</head>
+<body>
+    <h1>Javascript Intro</h1>
+    <div>
+        <h3>Change paragraph contents and style with Javascript</h3>
+        <p id="demo">Demo</p>
+        <button id="btn_demo" onclick="changeDemo()">Change demo content</button>
+
+    
+    </div>
+    <h3>Print numbers 1-100 to console</h3>
+    <br>
+    <button id="btn_count" onclick="countDemo()">Count demo</button>
+
+    <div>
+        <h3>Create Roll Over image</h3>
+        <br>
+        <img id="pic" src="Koala.jpg" width="200" onmouseover="rollOver(this.id, 'Penguins.jpg')" onmouseleave="rollOver(this.id, 'Koala.jpg')"> 
+        
+    </div>
+
+    <div>
+        <h3>Show - Hide elements</h3>
+        <br>
+        <div class="box" >
+            <img id="penguins" src="Penguins.jpg" width="200">
+            <p>This is sample image</p>
+            <button id="btn_hide" onclick="hideDemo('penguins')">Hide demo</button> 
+            &nbsp; &nbsp; &nbsp;
+            <button id="btn_show" onclick="showDemo('penguins')">Show demo</button>
+        </div>
+        
+    </div>
+
+    <div>
+        <h3>Show - Hide elements with one function</h3>
+        <br>
+        <div class="box" >
+            <img id="koala" src="Koala.jpg" width="200">
+            <p>This is sample image</p>
+            <button id="btn_hide" onclick="hideShowDemo('koala' , 'none' )">Hide demo</button> 
+            &nbsp; &nbsp; &nbsp;
+            <button id="btn_show" onclick="hideShowDemo('koala' , 'block')">Show demo</button>
+        
+    </div>
+    
+    <script>
+        document.querySelector('#btn_demo').addEventListener('click', function() {
+        console.log('btn_demo clicked');
+    });
+</script>
+</body>
+
+</html>
