@@ -1,0 +1,73 @@
+@import url('http://fonts.googleapis.com/css?family=Amarante');
+span{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+#json_tbl {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+#json_tbl thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#json_tbl thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#json_tbl thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#json_tbl thead tr th.headerSortUp, #json_tbl thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#json_tbl thead tr th.headerSortUp span {
+  background-image: url('up-arrow.png');
+}
+#json_tbl thead tr th.headerSortDown span {
+  background-image: url('down-arrow.png');
+}
+
+
+#json_table tbody tr { 
+  color: #555;
+}
+#json_tbl tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#json_tbl tbody tr td.lalign {
+  text-align: left;
+}

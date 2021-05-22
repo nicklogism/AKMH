@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style-tblsort.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="ajax3.js"></script>
+
+<script>
+    $(document).ready(function () {
+		$("#ajaxShow").click(function(){
+			ajaxShowFunction();		
+		});				
+    });
+</script>
+
+<style>
+	input{
+    	border: none !important;
+    	outline: none !important;
+		padding:3px;
+	}
+</style>
+</head>
+
+<body>
+  <form name='myForm' id='myForm'>
+        Max Age: <input type='text' name='age' id='age' /> <br />
+        Max Score: <input type='text' name='score' id='score' /> <br />
+        Sex: <select id='sex'>
+        <option value='m'>m</option>
+        <option value='f'>f</option>
+        </select>
+        <input type='button' id='ajaxShow' value='Query MySQL' />
+  </form>
+  
+<table id='json_tbl' class='table table-stripped'>
+	<thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Score</th>
+        <th>Select</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+</table>
+
+</body>
+</html>
